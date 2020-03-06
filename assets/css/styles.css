@@ -211,3 +211,9 @@ button[disabled] {
   transform: scale(2);
   transition: 0.2s;
 }
+
+@media (max-width: 400px) {
+  .login {
+    width: 100%;
+  }
+}
