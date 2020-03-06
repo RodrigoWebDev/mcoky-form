@@ -213,6 +213,10 @@ button[disabled] {
 }
 
 @media (max-width: 400px) {
+  #app.logged {
+    height: auto;
+  }
+
   .login {
     width: 100%;
   }
