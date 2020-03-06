@@ -142,7 +142,7 @@ Form.onsubmit = async e => {
   selector("#app").appendChild(Loader);
 
   const users = await getDevelopersList(
-    "http://www.mocky.io/v2/5dba68fb3000007400028eb5"
+    "https://www.mocky.io/v2/5dba68fb3000007400028eb5"
   );
 
   selector(".lds-roller").style.display = "none";
