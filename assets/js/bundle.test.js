@@ -45,6 +45,7 @@
     | |  __/\__ \ |_\__ \
     |_|\___||___/\__|___/
 
+    OBS: Não me aprofundei muito nos testes pela falta de tempo
 */
 
 console.log("Bundle test");

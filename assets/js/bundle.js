@@ -100,6 +100,10 @@ const Logo = create("img");
 Logo.src = "./assets/images/logo.svg";
 Logo.classList.add("logo");
 
+const Loader = create("div");
+Loader.classList.add("lds-roller");
+Loader.innerHTML = `<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>`;
+
 const Form = create("form");
 
 Form.innerHTML = `
@@ -134,9 +138,14 @@ Form.oninput = e => {
 Form.onsubmit = async e => {
   e.preventDefault();
 
+  //Loader
+  selector("#app").appendChild(Loader);
+
   const users = await getDevelopersList(
     "http://www.mocky.io/v2/5dba68fb3000007400028eb5"
   );
+
+  selector(".lds-roller").style.display = "none";
   renderPageUsers(users);
 };
 
